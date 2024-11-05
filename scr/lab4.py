@@ -1,5 +1,5 @@
 class Camera:
-    def __init__(self, name = 'Alpha', memory = '4000mb', zoom = '1,5x', num = 1234, model = 'Sigma'):
+    def __init__(self, name='Alpha', memory='4000mb', zoom='1,5x', num=1234, model='Sigma'):
         self.__name = name
         self.__memory = memory
         self.__zoom = zoom
@@ -37,6 +37,7 @@ def main():
     print(f'{camera1.get_name()}, {camera1.get_memory()}, {camera1.get_zoom()}')
     print(f'{camera2.get_name()}, {camera2.get_memory()}, {camera2.get_zoom()}')
 
-    camera.__repr__()
+    print(repr(camera))
 
-main()
+if __name__ == "__main__":
+    main()
